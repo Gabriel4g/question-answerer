@@ -1,7 +1,7 @@
 # Perguntas programadas ↴
 <hr/>
 
-### ➜ Qual o melhor jogo do momento?
+## ➜ Qual o melhor jogo do momento?
 <hr/>
 
 ### ➜ Quem te criou?
