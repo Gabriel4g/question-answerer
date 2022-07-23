@@ -1,17 +1,15 @@
 // Aplicacão que responde perguntas relacionadas a jogos.
-
 const input_quest = document.querySelector("#input-quest")
 const button_quest = document.querySelector("#button-quest");
-const Clone_question = document.getElementById("pergunta");
+const clone_question = document.getElementById("pergunta");
 const answer = document.getElementById("resposta");
+const imageGame = document.querySelector("#img-game");
 
 const arrowMotivation = () => {
     answer.innerHTML = "Vai sim! Continue estudando que vc vai longe."
 }
 
 function askQuestion() {
-
-    // const elosValorant = ["Ferro", "Bronze", "Prata", "Ouro", "Platina", "Diamante", "Imortal", "Radiante"]
 
     const objectQuestions = {
         emptyQuestion: '',
@@ -35,10 +33,14 @@ function askQuestion() {
 
     function removeHtmlAfter() {
         setTimeout(() => {
-            answer.innerHTML = ""
-            Clone_question.innerHTML = ""
-            answer.style.transition = "900ms ease"
-        }, 6000)
+            /* answer.style.opacity = "0"
+            clone_question.style.opacity = "0" */
+            answer.innerHTML = "";
+            clone_question.innerHTML = "";
+            answer.style.transition = "900ms ease";
+            imageGame.src = "./assets/game.png"
+            return;
+        }, 5000)
         clearTimeout()
     }
 
@@ -46,6 +48,8 @@ function askQuestion() {
 
         case objectQuestions.emptyQuestion:
             answer.innerHTML = "Faça uma pergunta"
+            imageGame.src = "https://c.tenor.com/Se0P1hR2f4gAAAAM/suspicious-emoji.gif"
+            removeHtmlAfter()
             break;
 
         case objectQuestions.devBrabo:
@@ -54,6 +58,7 @@ function askQuestion() {
 
         case objectQuestions.question1:
             answer.innerHTML = "Valoran... Ops, => Minecraft"
+            imageGame.src = "https://c.tenor.com/mqM250ZubZwAAAAC/raze-valorant.gif"
             break;
 
         case objectQuestions.question2:
@@ -69,6 +74,7 @@ function askQuestion() {
 
         case objectQuestions.question4:
             answer.innerHTML = "Valorant, Apex, minecraftttkkk"
+            imageGame.src = "https://i.pinimg.com/originals/34/83/b4/3483b4b5e873a4dde26a949d0b63ec99.gif"
             removeHtmlAfter()
             break;
 
@@ -78,12 +84,14 @@ function askQuestion() {
             break;
 
         case objectQuestions.question6:
-            answer.innerHTML = "meu oV... => Riot games"
+            answer.innerHTML = "eu"
+            imageGame.src = "https://i.pinimg.com/736x/9d/4a/3b/9d4a3b8bece01eb5aef7a78eb0d7be93.jpg"
             removeHtmlAfter()
             break;
 
         case objectQuestions.question7:
-            answer.innerHTML = "meu... Ovo "
+            answer.innerHTML = "Galinha"
+            imageGame.src = "https://gifs.eco.br/wp-content/uploads/2021/09/gifs-de-galinha-dancando-0.gif"
             removeHtmlAfter()
             break;
 
@@ -99,6 +107,7 @@ function askQuestion() {
 
         case objectQuestions.question10:
             answer.innerHTML = "Ben10, o melhor"
+            imageGame.src = "https://studio.code.org/v3/assets/ES07HvXxl0Az8Wptu0jG_iKwwaxl__jHfmBr3wEEJuA/FakeTeemingGoldfish-max-1mb.gif"
             removeHtmlAfter()
             break;
     }
@@ -108,6 +117,7 @@ function askQuestion() {
         answer.style.transition = "900ms ease-in"
     }
 
-    Clone_question.innerHTML = input_quest.value;
+    clone_question.innerHTML = input_quest.value;
     input_quest.value = ""
+
 }
