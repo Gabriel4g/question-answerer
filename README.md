@@ -1,35 +1,7 @@
-# Perguntas programadas ↴
+# Aplicação que responde perguntas ↴
 <hr/>
 
-## ➜ Qual o melhor jogo do momento?
-<hr/>
-
-### ➜ Quem te criou?
-<hr/>
-
-### ➜ Nescau ou toddy?
-<hr/>
-
-### ➜ Me fale uns jogos legais
-<hr/>
-
-### ➜ Valorant é fps tatico?
-<hr/>
-
-### ➜ Quem desenvolveu o valorant?
-<hr/>
-
-### ➜ Quem nasceu primeiro, o ovo, ou a galinha?
-<hr/>
-
-### ➜ Quem é o melhor gamer do Brasil?
-<hr/>
-
-### ➜ Qual foi o melhor console de todos os tempos?
-<hr/>
-
-### ➜ Qual é o jogo que nunca vai ser superado?
-<hr/>
+![Captura de tela de 2022-07-27 19-45-20](https://user-images.githubusercontent.com/92071360/181396589-825cec34-5fa2-4cbe-9879-b6fcb4aab4cb.png)
 
 ## Creator ↴
-<li> <a href="https://instagram.com/gabrielbarrozs">Gabriel<a/> </li>
+### <i> <li> <a href="https://instagram.com/gabrielbarrozs">Gabriel<a/> </li>
