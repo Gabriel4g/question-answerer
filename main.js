@@ -4,6 +4,21 @@ const button_quest = document.querySelector("#button-quest");
 const clone_question = document.getElementById("pergunta");
 const answer = document.getElementById("resposta");
 const imageGame = document.querySelector("#img-game");
+const clickOpacity = document.querySelector("#dark");
+const modal = document.querySelector("#modal-questions");
+const openModal = document.querySelector("#open-questions");
+
+const openModalQuestions = () => {
+    clickOpacity.classList.toggle("class-modal");
+    modal.style.display = "flex";
+    openModal.setAttribute("disabled", "disabled");
+}
+
+const closeModal = () => {
+    modal.style.display = "none";
+    clickOpacity.classList.toggle("class-modal");
+    openModal.removeAttribute("disabled");
+}
 
 const arrowMotivation = () => {
     answer.innerHTML = "Vai sim! Continue estudando que vc vai longe."

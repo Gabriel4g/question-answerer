@@ -7,23 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div id="container">
-        <img src="./assets/game.png" style="height: 10rem; width: 15rem" alt="game" id="img-game">
+    <div id="modal-questions">
+        <header>
+            <button id="close" onclick="closeModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-x" width="32"
+                    height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                    <path d="M10 10l4 4m0 -4l-4 4" />
+                </svg>
+            </button>
+        </header>
+        <h2>Perguntas programadas</h2>
 
-        <h2>Vamos falar sobre games?</h2>
+        <div id="questions">
+            <p>Qual o melhor jogo do momento?</p>
+            <p>Quem te criou?</p>
+            <p>Nescau ou toddy?</p>
+            <p>Me fale uns jogos legais</p>
+            <p>Valorant é fps tatico?</p>
+            <p>Quem desenvolveu o valorant?</p>
+            <p>Quem nasceu primeiro, o ovo ou a galinha?</p>
+            <p>Quem é o melhor gamer do Brasil?</p>
+            <p>Qual foi o melhor console de todos os tempos?</p>
+            <p>Qual é o jogo que nunca vai ser superado?</p>
+        </div>
+    </div>
+    
+    <div id="dark">
+        <nav>
+            <button id="open-questions" onclick="openModalQuestions()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zoom-question" width="30"
+                    height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="10" cy="10" r="7" />
+                    <path d="M21 21l-6 -6" />
+                    <line x1="10" y1="13" x2="10" y2="13.01" />
+                    <path d="M10 10a1.5 1.5 0 1 0 -1.14 -2.474" />
+                </svg>
+                Mostrar perguntas
+            </button>
+        </nav>
 
-        <p>Me faça uma pergunta relacionada a jogos 🎮 🎮 🎮 🎮</p>
+        <div id="container">
+            <img src="./assets/game.png" style="height: 10rem; width: 15rem" alt="game" id="img-game">
 
-        <input id="input-quest" placeholder="Digite sua pergunta" type="text">
+            <h2>Vamos falar sobre games?</h2>
 
-        <button id="button-quest" onclick="askQuestion()">Fazer pergunta</button>
+            <p>Me faça uma pergunta aleatória</p>
 
-        <div id="container-respostas">
-            <p id="pergunta"></p>
-            <h1 id="resposta"></h1>
+            <input id="input-quest" placeholder="Digite sua pergunta" type="text">
+
+            <button id="button-quest" onclick="askQuestion()">Fazer pergunta</button>
+
+            <div id="container-respostas">
+                <p id="pergunta"></p>
+                <h1 id="resposta"></h1>
+            </div>
         </div>
     </div>
 

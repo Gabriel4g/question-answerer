@@ -7,10 +7,100 @@
 body {
     background: #000000;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 62.5%;
     height: 90vh;
+}
+
+#open-questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    height: 2.5rem;
+    width: 11rem;
+    border: none;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    background: #251c3b;
+}
+
+#dark {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-questions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    opacity: 1;
+    border-radius: 10px;
+    margin-top: 3rem;
+    background: #5111F3;
+    max-height: 100%;
+    width: 95%;
+    max-width: 30rem;
+    display: none;
+}
+
+#modal-questions header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    padding: 20px;
+}
+
+#modal-questions #close {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#modal-questions > h2 {
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+#modal-questions #questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+#modal-questions p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border: 2px solid #000;
+
+    padding: 5px;
+    margin: 0.30rem 1rem;
+}
+
+#modal-questions p:last-child {
+    margin-bottom: 15px;
 }
 
 #container {
@@ -21,20 +111,22 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    text-align: center;
 }
 
 #container h2 {
     font-size: 1.9rem;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     margin-top: 2rem;
     color: #fff;
 }
 
 #container p {
     color: #ffffff;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.90rem;
-    font-weight: 500;
+    font-weight: 300;
     margin-top: 0.45rem;
 }
 
@@ -94,4 +186,8 @@ body {
 #container-respostas h1 {
     color: #fff;
     margin-top: 0.75rem;
+}
+
+.class-modal {
+    opacity: 0.1;
 }
